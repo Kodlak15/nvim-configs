@@ -14,7 +14,6 @@ local servers = {
   "jsonls",
   "yamlls",
   "clangd",
-  "rust-analyzer",
   "intelephense",
   "sqlls",
   "sqls",
@@ -26,6 +25,7 @@ local servers = {
   "ltex",
   "marksman",
   "pylsp",
+  "rust_analyzer"
 }
 
 lsp_installer.setup()
