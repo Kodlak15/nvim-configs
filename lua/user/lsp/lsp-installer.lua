@@ -6,12 +6,26 @@ end
 local servers = {
   "sumneko_lua",
   "cssls",
+  "cssmodules_ls",
   "html",
   "tsserver",
   "pyright",
   "bashls",
   "jsonls",
   "yamlls",
+  "clangd",
+  "rust-analyzer",
+  "intelephense",
+  "sqlls",
+  "sqls",
+  "cmake",
+  "dockerls",
+  "golangci_lint_ls",
+  "gopls",
+  "julials",
+  "ltex",
+  "marksman",
+  "pylsp",
 }
 
 lsp_installer.setup()
