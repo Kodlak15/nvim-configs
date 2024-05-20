@@ -2,7 +2,7 @@
   description = "My Nix based Neovim configuration";
 
   inputs = {
-    inputs.systems.url = "github:nix-systems/x86_64-linux";
+    systems.url = "github:nix-systems/x86_64-linux";
     # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nixvim.url = "github:nix-community/nixvim";
     flake-utils = {
