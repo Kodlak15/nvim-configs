@@ -17,45 +17,23 @@
     flake-utils,
     ...
   }: let
-    supportedSystems = ["x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin"];
-    forEachSupportedSystem = f:
-      nixpkgs.lib.genAttrs supportedSystems (system:
-        f {
-          pkgs = import nixpkgs {inherit system;};
-          nixvim' = nixvim.legacyPackages.${system};
-        });
-
     config = import ./config;
-  in {
-    packages = forEachSupportedSystem ({
-      pkgs,
-      nixvim',
-    }: {
-      default = nixvim'.makeNixvimWithModule {
+  in
+    flake-utils.lib.eachDefaultSystem (system: let
+      pkgs = import nixpkgs {inherit system;};
+      nixvim' = nixvim.legacyPackages.${system};
+      nvim = nixvim'.makeNixvimWithModule {
         inherit pkgs;
         module = config;
         extraSpecialArgs = {
           inherit self;
         };
       };
-    });
-  };
+    in {
+      packages = {
+        default = nvim;
+      };
 
-  # flake-utils.lib.eachDefaultSystem (system: let
-  #   pkgs = import nixpkgs {inherit system;};
-  #   nixvim' = nixvim.legacyPackages.${system};
-  #   nvim = nixvim'.makeNixvimWithModule {
-  #     inherit pkgs;
-  #     module = config;
-  #     extraSpecialArgs = {
-  #       inherit self;
-  #     };
-  #   };
-  # in {
-  #   packages = {
-  #     default = nvim;
-  #   };
-  #
-  #   formatter = pkgs.alejandra;
-  # });
+      formatter = pkgs.alejandra;
+    });
 }
