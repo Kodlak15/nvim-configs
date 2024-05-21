@@ -109,7 +109,7 @@
         json = ["prettier"];
         templ = ["prettier"];
         c = ["clang_format"];
-        python = ["black"];
+        python = ["isort" "black"];
         haskell = ["fourmolu"];
         rust = ["rustfmt"];
       };
