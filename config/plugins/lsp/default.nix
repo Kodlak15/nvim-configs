@@ -58,6 +58,7 @@
         tsserver.enable = true;
         yamlls.enable = true;
         templ.enable = true;
+        pylsp.enable = true;
         tailwindcss = {
           enable = true;
           filetypes = [
@@ -108,7 +109,7 @@
         json = ["prettier"];
         templ = ["prettier"];
         c = ["clang_format"];
-        python = ["isort" "black"];
+        python = ["black"];
         haskell = ["fourmolu"];
         rust = ["rustfmt"];
       };
