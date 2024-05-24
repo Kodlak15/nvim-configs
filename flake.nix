@@ -2,6 +2,7 @@
   description = "My Nix based Neovim configuration";
 
   inputs = {
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-23.11";
     systems.url = "github:nix-systems/x86_64-linux";
     nixvim.url = "github:nix-community/nixvim";
     flake-utils = {
@@ -13,6 +14,7 @@
   outputs = {
     self,
     nixpkgs,
+    nixpkgs-stable,
     nixvim,
     flake-utils,
     ...
@@ -26,6 +28,7 @@
         inherit pkgs;
         module = config;
         extraSpecialArgs = {
+          pkgs-stable = import nixpkgs-stable {inherit system;};
           inherit self;
         };
       };
