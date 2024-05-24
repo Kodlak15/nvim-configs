@@ -1,4 +1,8 @@
 {
+  pkgs,
+  pkgs-stable,
+  ...
+}: {
   plugins = {
     lsp = {
       enable = true;
@@ -76,7 +80,10 @@
             init_options.userLanguages.rust = "html";
           };
         };
-        zls.enable = true;
+        zls = {
+          enable = true;
+          package = pkgs-stable.zls;
+        };
       };
       keymaps = {
         diagnostic = {
