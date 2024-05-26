@@ -82,7 +82,8 @@
         };
         zls = {
           enable = true;
-          package = pkgs-stable.zls;
+          package = pkgs.zls;
+          # package = pkgs-stable.zls;
         };
       };
       keymaps = {
