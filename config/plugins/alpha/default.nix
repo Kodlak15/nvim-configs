@@ -14,12 +14,12 @@
         };
         type = "text";
         val = [
-          "  ███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗  "
-          "  ████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║  "
-          "  ██╔██╗ ██║██║ ╚███╔╝ ██║   ██║██║██╔████╔██║  "
-          "  ██║╚██╗██║██║ ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║  "
-          "  ██║ ╚████║██║██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║  "
-          "  ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝  "
+          "███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗"
+          "████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║"
+          "██╔██╗ ██║██║ ╚███╔╝ ██║   ██║██║██╔████╔██║"
+          "██║╚██╗██║██║ ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║"
+          "██║ ╚████║██║██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║"
+          "╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝"
         ];
       }
       {
@@ -30,14 +30,24 @@
         type = "group";
         val = [
           {
-            command = "<CMD>ene <CR>";
-            desc = "  New file";
-            shortcut = "e";
+            on_press = {
+              __raw = "function() vim.cmd[[ene]] end";
+            };
+            opts = {
+              shortcut = "n";
+            };
+            type = "button";
+            val = "  New file";
           }
           {
-            command = ":qa<CR>";
-            desc = "  Quit Neovim";
-            shortcut = "SPC q";
+            on_press = {
+              __raw = "function() vim.cmd[[qa]] end";
+            };
+            opts = {
+              shortcut = "q";
+            };
+            type = "button";
+            val = " Quit Neovim";
           }
         ];
       }
@@ -51,47 +61,7 @@
           position = "center";
         };
         type = "text";
-        val = "Ya know it's funny, what's happening to us. Our lives have become digital. Our friends, now virtual.   ";
-      }
-      {
-        opts = {
-          hl = "Keyword";
-          position = "center";
-        };
-        type = "text";
-        val = "And, anything you could ever wanna know is just a click away. Experiencing the world through second    ";
-      }
-      {
-        opts = {
-          hl = "Keyword";
-          position = "center";
-        };
-        type = "text";
-        val = "hand information isn't enough. If we want authenticity we have to initiate it. We will never know our  ";
-      }
-      {
-        opts = {
-          hl = "Keyword";
-          position = "center";
-        };
-        type = "text";
-        val = "full potential unless we push ourselves to find it. It's this self-discovery that inevitably takes us  ";
-      }
-      {
-        opts = {
-          hl = "Keyword";
-          position = "center";
-        };
-        type = "text";
-        val = "to the wildest places on earth.                                                                        ";
-      }
-      {
-        opts = {
-          hl = "Keyword";
-          position = "center";
-        };
-        type = "text";
-        val = "- Travis Rice                                                                                          ";
+        val = "Inspiring quote here.";
       }
     ];
   };
