@@ -1,8 +1,4 @@
-{
-  pkgs,
-  pkgs-stable,
-  ...
-}: {
+{pkgs, ...}: {
   plugins = {
     lsp = {
       enable = true;
@@ -12,6 +8,7 @@
           enable = true;
           filetypes = [
             "html"
+            "templ"
           ];
         };
         htmx = {
