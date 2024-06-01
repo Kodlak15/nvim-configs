@@ -112,7 +112,7 @@
         typescript = ["prettier"];
         html = ["prettier"];
         json = ["prettier"];
-        templ = ["prettier"];
+        templ = ["templ" "prettier"];
         c = ["clang_format"];
         python = ["isort" "black"];
         haskell = ["fourmolu"];
