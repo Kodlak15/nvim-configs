@@ -8,7 +8,6 @@
           enable = true;
           filetypes = [
             "html"
-            "templ"
           ];
         };
         htmx = {
