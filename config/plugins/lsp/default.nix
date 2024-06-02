@@ -67,6 +67,8 @@
             "scss"
             "javascript"
             "typescript"
+            "javascriptreact"
+            "typescriptreact"
             "svelte"
             "rust"
             "templ"
@@ -109,6 +111,8 @@
         bash = ["shfmt"];
         javascript = ["prettier"];
         typescript = ["prettier"];
+        javascriptreact = ["prettier"];
+        typescriptreact = ["prettier"];
         html = ["prettier"];
         json = ["prettier"];
         templ = ["templ"];
