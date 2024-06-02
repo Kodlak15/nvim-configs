@@ -23,6 +23,8 @@
           filetypes = [
             "html"
             "templ"
+            "javascriptreact"
+            "typescriptreact"
             # "rust"
           ];
         };
