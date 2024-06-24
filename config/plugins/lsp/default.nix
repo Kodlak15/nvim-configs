@@ -39,11 +39,11 @@
             "templ"
           ];
         };
+        bashls.enable = true;
         eslint.enable = true;
         nil_ls.enable = true;
         pyright.enable = true;
         hls.enable = true;
-        # intelephense.enable = true;
         jsonls.enable = true;
         ocamllsp.enable = true;
         rust-analyzer = {
