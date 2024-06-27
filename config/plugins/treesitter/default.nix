@@ -11,8 +11,10 @@
 
     treesitter-context = {
       enable = false;
-      mode = "cursor";
-      maxLines = 3;
+      settings = {
+        mode = "cursor";
+        maxLines = 3;
+      };
     };
 
     treesitter-refactor = {

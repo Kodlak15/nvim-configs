@@ -18,7 +18,7 @@
             # "rust"
           ];
         };
-        emmet_ls = {
+        emmet-ls = {
           enable = true;
           filetypes = [
             "html"
@@ -41,7 +41,7 @@
         };
         bashls.enable = true;
         eslint.enable = true;
-        nil_ls.enable = true;
+        nil-ls.enable = true;
         pyright.enable = true;
         hls.enable = true;
         jsonls.enable = true;
