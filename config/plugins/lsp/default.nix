@@ -61,7 +61,7 @@
         tsserver.enable = true;
         yamlls.enable = true;
         templ.enable = true;
-        sqls.enable = true;
+        # sqls.enable = true;
         pylsp.enable = true;
         tailwindcss = {
           enable = true;
