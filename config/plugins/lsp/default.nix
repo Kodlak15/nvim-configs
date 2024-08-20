@@ -82,6 +82,7 @@
             init_options.userLanguages.rust = "html";
           };
         };
+        ols.enable = true;
         zls = {
           enable = true;
           package = pkgs.zls;
