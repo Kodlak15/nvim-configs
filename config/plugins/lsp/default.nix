@@ -85,8 +85,7 @@
         ols.enable = true;
         zls = {
           enable = true;
-          package = pkgs.zls;
-          # package = pkgs-stable.zls;
+          # package = pkgs.zls;
         };
       };
       keymaps = {
