@@ -58,7 +58,7 @@
           };
         };
         svelte.enable = true;
-        tsserver.enable = true;
+        ts-ls.enable = true;
         yamlls.enable = true;
         templ.enable = true;
         # sqls.enable = true;
@@ -109,25 +109,24 @@
           timeoutMs = 500;
           lspFallback = true;
         };
+        notify_on_error = false;
+        formatters_by_ft = {
+          lua = ["stylua"];
+          nix = ["alejandra"];
+          bash = ["shfmt"];
+          javascript = ["prettier"];
+          typescript = ["prettier"];
+          javascriptreact = ["prettier"];
+          typescriptreact = ["prettier"];
+          html = ["prettier"];
+          json = ["prettier"];
+          templ = ["templ"];
+          c = ["clang_format"];
+          python = ["isort" "black"];
+          haskell = ["fourmolu"];
+          rust = ["rustfmt"];
+        };
       };
-      formatters = {}; # Custom formatters
-      formattersByFt = {
-        lua = ["stylua"];
-        nix = ["alejandra"];
-        bash = ["shfmt"];
-        javascript = ["prettier"];
-        typescript = ["prettier"];
-        javascriptreact = ["prettier"];
-        typescriptreact = ["prettier"];
-        html = ["prettier"];
-        json = ["prettier"];
-        templ = ["templ"];
-        c = ["clang_format"];
-        python = ["isort" "black"];
-        haskell = ["fourmolu"];
-        rust = ["rustfmt"];
-      };
-      notifyOnError = false;
     };
   };
 }

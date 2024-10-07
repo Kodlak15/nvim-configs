@@ -32,6 +32,7 @@
     # };
     cmp-nvim-lua.enable = true;
     cmp-npm.enable = true;
+    web-devicons.enable = true;
     mini = {
       enable = true;
       modules = {
