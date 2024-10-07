@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   imports = [
+    ./avante
     ./lsp
     ./cmp
     ./treesitter

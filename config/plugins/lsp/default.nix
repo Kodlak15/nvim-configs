@@ -104,9 +104,11 @@
     };
     conform-nvim = {
       enable = true;
-      formatOnSave = {
-        timeoutMs = 500;
-        lspFallback = true;
+      settings = {
+        formatOnSave = {
+          timeoutMs = 500;
+          lspFallback = true;
+        };
       };
       formatters = {}; # Custom formatters
       formattersByFt = {
