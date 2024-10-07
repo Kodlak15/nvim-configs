@@ -16,7 +16,6 @@
           filetypes = [
             "html"
             "templ"
-            # "rust"
           ];
         };
         emmet-ls = {
@@ -26,7 +25,6 @@
             "templ"
             "javascriptreact"
             "typescriptreact"
-            # "rust"
           ];
         };
         cssls.enable = true;
@@ -61,7 +59,6 @@
         ts-ls.enable = true;
         yamlls.enable = true;
         templ.enable = true;
-        # sqls.enable = true;
         pylsp.enable = true;
         tailwindcss = {
           enable = true;
@@ -83,10 +80,7 @@
           };
         };
         ols.enable = true;
-        zls = {
-          enable = true;
-          # package = pkgs.zls;
-        };
+        zls.enable = true;
       };
       keymaps = {
         diagnostic = {
@@ -105,9 +99,9 @@
     conform-nvim = {
       enable = true;
       settings = {
-        formatOnSave = {
-          timeoutMs = 500;
-          lspFallback = true;
+        format_on_save = {
+          timeout_ms = 500;
+          lsp_format = "fallback";
         };
         notify_on_error = false;
         formatters_by_ft = {

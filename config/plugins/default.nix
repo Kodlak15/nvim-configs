@@ -25,11 +25,6 @@
       # Below syntax in quotes represents the path to friendly-snippets in the nix store
       fromVscode = [{paths = "${pkgs.vimPlugins.friendly-snippets}";}];
     };
-    # TODO: trying this out off, turn back on if things break
-    # lsp-format = {
-    #   enable = false;
-    #   lspServersToEnable = "all";
-    # };
     cmp-nvim-lua.enable = true;
     cmp-npm.enable = true;
     web-devicons.enable = true;
