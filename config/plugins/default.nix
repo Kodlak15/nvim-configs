@@ -16,6 +16,7 @@
     ./notify
     ./packer
     ./todo-comments
+    ./render-markdown
   ];
 
   plugins = {

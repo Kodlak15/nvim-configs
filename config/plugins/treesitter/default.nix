@@ -1,7 +1,4 @@
 {
-  imports = [
-  ];
-
   plugins = {
     treesitter = {
       enable = true;

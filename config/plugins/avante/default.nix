@@ -8,6 +8,15 @@
         model = "claude-3-5-sonnet-20240620";
         temperature = 0;
       };
+      ###
+      behaviour = {
+        auto_suggestions = false; # Experimental stage
+        auto_set_highlight_group = true;
+        auto_set_keymaps = true;
+        auto_apply_diff_after_generation = false;
+        support_paste_from_clipboard = false;
+      };
+      ###
       diff = {
         autojump = true;
         debug = false;
