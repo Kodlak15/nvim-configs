@@ -12,18 +12,8 @@
         right_pad = 1;
       };
       code = {
-        # above = " ";
-        # below = " ";
-        # border = "thick";
-        # language_pad = 2;
-        # left_pad = 2;
-        # position = "right";
-        # right_pad = 2;
-        # sign = false;
-        # width = "block";
-        # highlight = "treesitter"; # Use treesitter for syntax highlighting
         enabled = true;
-        sign = true;
+        sign = false;
         style = "full";
         position = "left";
         language_pad = 0;
@@ -38,6 +28,7 @@
         below = "▀";
         highlight = "RenderMarkdownCode";
         highlight_inline = "RenderMarkdownCodeInline";
+        syntax_highlighting = true;
       };
       heading = {
         border = true;
@@ -55,7 +46,12 @@
       };
       render_modes = true;
       signs = {
-        enabled = false;
+        enabled = true;
+        icons = {
+          bullet = "•";
+          quote = "▌";
+          codeblock = "▌";
+        };
       };
     };
   };
