@@ -1,13 +1,13 @@
 {
   colorschemes = {
     catppuccin = {
-      enable = true;
+      enable = false;
       settings = {
         flavour = "mocha";
       };
     };
     rose-pine = {
-      enable = false;
+      enable = true;
       settings = {
         styles = {
           transparency = true;
