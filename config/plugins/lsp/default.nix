@@ -3,7 +3,7 @@
     lsp = {
       enable = true;
       servers = {
-        lua-ls.enable = true;
+        lua_ls.enable = true;
         html = {
           enable = true;
           filetypes = [
@@ -18,7 +18,7 @@
             "templ"
           ];
         };
-        emmet-ls = {
+        emmet_ls = {
           enable = true;
           filetypes = [
             "html"
@@ -40,12 +40,15 @@
         };
         bashls.enable = true;
         eslint.enable = true;
-        nil-ls.enable = true;
+        nil_ls.enable = true;
         pyright.enable = true;
         hls.enable = true;
         jsonls.enable = true;
-        ocamllsp.enable = true;
-        rust-analyzer = {
+        ocamllsp = {
+          enable = true;
+          package = null;
+        };
+        rust_analyzer = {
           enable = true;
           installCargo = false;
           installRustc = false;
@@ -56,7 +59,7 @@
           };
         };
         svelte.enable = true;
-        ts-ls.enable = true;
+        ts_ls.enable = true;
         yamlls.enable = true;
         templ.enable = true;
         pylsp.enable = true;
