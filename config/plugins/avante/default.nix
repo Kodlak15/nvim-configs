@@ -8,7 +8,6 @@
         model = "claude-3-5-sonnet-20240620";
         temperature = 0;
       };
-      ###
       auto_suggestions_provider = "claude";
       behaviour = {
         auto_suggestions = false; # Disable for time being (experimental)
@@ -17,7 +16,6 @@
         auto_apply_diff_after_generation = false;
         support_paste_from_clipboard = false;
       };
-      ###
       diff = {
         autojump = true;
         debug = false;
@@ -41,6 +39,12 @@
           prev = "[x";
           theirs = "ct";
         };
+      };
+      suggestion = {
+        accept = "<Tab>";
+        next = "<M-]>";
+        prev = "<M-[>";
+        dismiss = "<C-]>";
       };
       provider = "claude";
       windows = {
