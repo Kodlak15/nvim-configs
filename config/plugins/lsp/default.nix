@@ -125,6 +125,7 @@
           python = ["isort" "black"];
           haskell = ["fourmolu"];
           rust = ["rustfmt"];
+          ocaml = ["ocamlformat"];
         };
       };
     };
