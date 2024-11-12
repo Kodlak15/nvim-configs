@@ -87,6 +87,7 @@
         };
         ols.enable = true;
         zls.enable = true;
+        gleam.enable = true;
       };
       keymaps = {
         diagnostic = {
@@ -126,6 +127,7 @@
           haskell = ["fourmolu"];
           rust = ["rustfmt"];
           ocaml = ["ocamlformat"];
+          gleam = ["gleam"];
         };
       };
     };
