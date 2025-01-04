@@ -38,6 +38,7 @@
             "templ"
           ];
         };
+        gdscript.enable = true;
         bashls.enable = true;
         eslint.enable = true;
         nil_ls.enable = true;
