@@ -38,7 +38,10 @@
             "templ"
           ];
         };
-        gdscript.enable = true;
+        gdscript = {
+          enable = true;
+          package = null; # TODO
+        };
         bashls.enable = true;
         eslint.enable = true;
         nil_ls.enable = true;
