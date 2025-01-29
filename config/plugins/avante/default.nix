@@ -13,15 +13,14 @@
           __inherited_from = "openai";
           api_key_name = "";
           endpoint = "http://127.0.0.1:11434/v1";
-          model = "deepseek-r1";
+          # model = "deepseek-r1";
+          model = "llama3.2";
         };
       };
-      provider = "ollama";
-      # auto_suggestions_provider = "claude";
+      provider = "claude";
       auto_suggestions_provider = "ollama";
       behaviour = {
-        # auto_suggestions = false; # Disable for time being (experimental)
-        auto_suggestions = true;
+        auto_suggestions = false; # Disable for time being (experimental)
         auto_set_highlight_group = true;
         auto_set_keymaps = true;
         auto_apply_diff_after_generation = false;
@@ -57,8 +56,6 @@
         prev = "<M-[>";
         dismiss = "<C-]>";
       };
-      # provider = "claude";
-      # provider = "ollama";
       windows = {
         sidebar_header = {
           align = "center";
