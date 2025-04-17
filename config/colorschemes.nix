@@ -22,7 +22,7 @@
       };
     };
     cyberdream = {
-      enable = true;
+      enable = false;
       settings = {
         borderless_telescope = true;
         hide_fillchars = true;
@@ -44,6 +44,9 @@
         };
         transparent = true;
       };
+    };
+    ayu = {
+      enable = true;
     };
   };
 }
