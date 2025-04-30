@@ -45,9 +45,5 @@
       };
     };
     nvim-autopairs.enable = true;
-    notify = {
-      enable = true;
-      backgroundColour = "#000000";
-    };
   };
 }
