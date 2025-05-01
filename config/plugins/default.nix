@@ -18,6 +18,7 @@
     ./packer
     ./todo-comments
     ./render-markdown
+    ./windsurf
   ];
 
   plugins = {

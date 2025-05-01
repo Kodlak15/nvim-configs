@@ -7,7 +7,6 @@
     ./colorschemes.nix
   ];
 
-  # enable = true;
   globals = {
     mapleader = " ";
   };
