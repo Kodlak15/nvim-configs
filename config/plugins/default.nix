@@ -17,8 +17,8 @@
     ./notify
     ./todo-comments
     ./render-markdown
-    ./windsurf
     ./mini
+    ./supermaven
   ];
 
   plugins = {
