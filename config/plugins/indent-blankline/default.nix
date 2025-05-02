@@ -5,10 +5,10 @@
   plugins.indent-blankline = {
     enable = false;
     settings = {
-      scope.enabled = false;
+      # scope.enabled = false;
       indent = {
-        char = "|";
-        tabChar = "|";
+        # char = "|";
+        # tabChar = "|";
       };
       exclude = {
         buftypes = [

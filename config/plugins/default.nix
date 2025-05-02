@@ -3,7 +3,8 @@
     # ./avante
     ./codecompanion
     ./lsp
-    ./cmp
+    # ./cmp
+    ./blink
     ./treesitter
     ./telescope
     ./neo-tree
@@ -28,8 +29,6 @@
       # Below syntax in quotes represents the path to friendly-snippets in the nix store
       fromVscode = [{paths = "${pkgs.vimPlugins.friendly-snippets}";}];
     };
-    cmp-nvim-lua.enable = true;
-    cmp-npm.enable = true;
     web-devicons.enable = true;
     mini = {
       enable = true;
