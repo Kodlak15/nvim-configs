@@ -48,7 +48,7 @@
     ayu = {
       enable = true;
       settings = {
-        style = "mirage";
+        mirage = true;
       };
     };
   };
