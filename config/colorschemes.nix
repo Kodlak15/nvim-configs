@@ -47,7 +47,9 @@
     };
     ayu = {
       enable = true;
-      mirage = true;
+      settings = {
+        style = "mirage";
+      };
     };
   };
 }
