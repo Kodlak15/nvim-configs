@@ -54,14 +54,5 @@
         desc = "[W]orkspace [S]ymbols";
       };
     };
-    # NOTE: need to figure out how to use 'helpers.mkRaw' to pass raw lua
-    # "<leader>rn" = {
-    #   action = ":lua vim.lsp.buf.rename";
-    #   desc = "[W]orkspace [S]ymbols";
-    # };
-    # "K" = {
-    #   action = ":lua vim.lsp.buf.hover";
-    #   desc = "Hover Documentation";
-    # };
   };
 }

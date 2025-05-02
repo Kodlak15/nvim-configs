@@ -5,7 +5,7 @@
   plugins.indent-blankline = {
     enable = false;
     settings = {
-      # scope.enabled = false;
+      scope.enabled = true;
       indent = {
         # char = "|";
         # tabChar = "|";

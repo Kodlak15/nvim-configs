@@ -13,7 +13,8 @@
     tabstop = 2;
     softtabstop = 2;
     termguicolors = true;
-    timeoutlen = 300;
+    # timeoutlen = 300;
+    timeoutlen = 200;
     undofile = true;
     undolevels = 10000;
     wrap = false;

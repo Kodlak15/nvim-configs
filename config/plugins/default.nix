@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   imports = [
-    # ./avante
     ./codecompanion
     ./lsp
     # ./cmp
@@ -16,10 +15,10 @@
     ./indent-blankline
     ./noice
     ./notify
-    ./packer
     ./todo-comments
     ./render-markdown
     ./windsurf
+    ./mini
   ];
 
   plugins = {
@@ -30,20 +29,6 @@
       fromVscode = [{paths = "${pkgs.vimPlugins.friendly-snippets}";}];
     };
     web-devicons.enable = true;
-    mini = {
-      enable = true;
-      modules = {
-        ai = {
-          n_lines = 500;
-          search_method = "cover_or_next";
-          custom_objects = {};
-        };
-        indentscope = {
-          symbol = "|";
-          options.try_as_border = true;
-        };
-      };
-    };
     nvim-autopairs.enable = true;
   };
 }

@@ -1,6 +1,6 @@
 {
   plugins.noice = {
-    enable = false; # Disable until I figure out issue
+    enable = true; # Disable until I figure out issue
     settings = {
       routes = [];
       presets = {

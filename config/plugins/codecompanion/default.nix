@@ -12,9 +12,6 @@
                   },
                   schema = {
                       model = {
-                          -- default = 'qwen2.5-coder:latest',
-                          -- default = "llama3.1:8b-instruct-q8_0",
-                          -- default = "llama3.1:8b-instruct-q4_0",
                           default = "hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF:IQ4_XS",
                       },
                       num_ctx = {
