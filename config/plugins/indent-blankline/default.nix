@@ -9,6 +9,7 @@
       indent = {
         # char = "|";
         # tabChar = "|";
+        char = "│";
       };
       exclude = {
         buftypes = [

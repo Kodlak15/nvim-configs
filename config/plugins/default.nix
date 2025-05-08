@@ -19,6 +19,7 @@
     ./render-markdown
     ./mini
     ./supermaven
+    ./transparent
   ];
 
   plugins = {
