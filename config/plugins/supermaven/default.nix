@@ -9,7 +9,7 @@
       };
       ignore_filetypes = ["cpp"];
       color = {
-        suggestion_color = "#ffffff";
+        suggestion_color = "#cccac2";
         cterm = 244;
       };
       log_level = "info";
