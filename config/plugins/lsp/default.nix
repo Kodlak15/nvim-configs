@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{
   plugins = {
     lsp = {
       enable = true;
@@ -31,6 +31,13 @@
         ccls.enable = true;
         clangd.enable = true;
         cmake.enable = true;
+        elixirls = {
+          enable = true;
+          filetypes = [
+            "ex"
+            "exs"
+          ];
+        };
         gopls = {
           enable = true;
           filetypes = [
