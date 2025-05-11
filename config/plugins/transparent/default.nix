@@ -1,6 +1,6 @@
 {
   plugins.transparent = {
-    enable = true;
+    enable = false;
     settings = {
       # extra_groups = [
       #   "BufferLineTabClose"

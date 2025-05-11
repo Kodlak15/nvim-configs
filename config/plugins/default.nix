@@ -19,7 +19,8 @@
     ./render-markdown
     ./mini
     ./supermaven
-    ./transparent
+    # ./transparent
+    # ./harpoon
   ];
 
   plugins = {
