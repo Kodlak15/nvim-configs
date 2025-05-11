@@ -33,10 +33,6 @@
         cmake.enable = true;
         elixirls = {
           enable = true;
-          filetypes = [
-            "ex"
-            "exs"
-          ];
         };
         gopls = {
           enable = true;
