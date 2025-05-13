@@ -18,4 +18,7 @@
     undolevels = 10000;
     wrap = false;
   };
+  highlightOverride = {
+    LineNr = {fg = "#ffffff";};
+  };
 }
