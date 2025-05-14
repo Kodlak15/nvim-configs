@@ -7,7 +7,6 @@
     settings = {
       scope = {
         enabled = true;
-        highlight = "CursorLineNr";
         show_end = false;
         show_exact_scope = true;
         show_start = false;
