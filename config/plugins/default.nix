@@ -1,8 +1,6 @@
 {pkgs, ...}: {
   imports = [
-    ./codecompanion
     ./lsp
-    # ./cmp
     ./blink
     ./treesitter
     ./telescope
@@ -14,10 +12,10 @@
     ./comment
     ./indent-blankline
     ./noice
-    ./notify
+    # ./notify
     ./todo-comments
     ./render-markdown
-    ./mini
+    # ./mini
     ./supermaven
     # ./transparent
     # ./harpoon
