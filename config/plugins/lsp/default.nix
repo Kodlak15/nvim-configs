@@ -47,11 +47,11 @@
         };
         glslls = {
           enable = true;
-          filetypes = [
-            "glsl"
-            "vertex"
-            "frag"
-          ];
+          # filetypes = [
+          #   "glsl"
+          #   "vertex"
+          #   "frag"
+          # ];
         };
         bashls.enable = true;
         eslint.enable = true;
