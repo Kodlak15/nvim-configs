@@ -45,7 +45,7 @@
           enable = true;
           package = null; # NOTE: lsp server runs on 127.0.0.1:6005 when godot editor open
         };
-        glsl.enable = true;
+        glslls.enable = true;
         bashls.enable = true;
         eslint.enable = true;
         nil_ls.enable = true;
