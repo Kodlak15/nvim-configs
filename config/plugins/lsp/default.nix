@@ -47,7 +47,7 @@
         };
         glslls = {
           enable = true;
-          tiletypes = [
+          filetypes = [
             "glsl"
             "vertex"
             "frag"
