@@ -85,6 +85,7 @@
           enable = true;
           filetypes = [
             "html"
+            "html.heex"
             "heex"
             "templ"
             "css"
