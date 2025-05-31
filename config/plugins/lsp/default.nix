@@ -15,6 +15,7 @@
           enable = true;
           filetypes = [
             "html"
+            "heex"
             "templ"
           ];
         };
@@ -22,9 +23,8 @@
           enable = true;
           filetypes = [
             "html"
+            "heex"
             "templ"
-            "javascriptreact"
-            "typescriptreact"
           ];
         };
         cssls.enable = true;
@@ -85,16 +85,11 @@
           enable = true;
           filetypes = [
             "html"
+            "heex"
+            "templ"
             "css"
             "scss"
-            "javascript"
-            "typescript"
-            "javascriptreact"
-            "typescriptreact"
             "svelte"
-            "rust"
-            "templ"
-            "go"
           ];
           extraOptions = {
             init_options.userLanguages.rust = "html";
