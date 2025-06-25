@@ -1,6 +1,6 @@
 {lib, ...}: {
   plugins.supermaven = {
-    enable = false;
+    enable = true;
     settings = {
       keymaps = {
         accept_suggestion = "<Tab>";

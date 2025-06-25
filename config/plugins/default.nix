@@ -19,6 +19,7 @@
     ./supermaven
     # ./transparent
     # ./harpoon
+    ./vimtex
   ];
 
   plugins = {
