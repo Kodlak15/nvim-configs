@@ -2,7 +2,8 @@
   plugins.vimtex = {
     enable = true;
     settings = {
-      vimtex_complete_enabled = true;
+      complete_enabled = true;
+      view_method = "zathura";
     };
   };
 }
