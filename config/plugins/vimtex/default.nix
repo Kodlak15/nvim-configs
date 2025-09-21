@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{
   plugins.vimtex = {
     enable = true;
     settings = {

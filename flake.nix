@@ -2,42 +2,36 @@
   description = "My Nix based Neovim configuration";
 
   inputs = {
+    flake-parts.url = "github:hercules-ci/flake-parts";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    systems.url = "github:nix-systems/x86_64-linux";
     nixvim.url = "github:nix-community/nixvim";
-    flake-utils = {
-      url = "github:numtide/flake-utils";
-      inputs.systems.follows = "systems";
-    };
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    nixvim,
-    flake-utils,
-    ...
-  }: let
-    config = import ./config;
-  in
-    flake-utils.lib.eachDefaultSystem (system: let
-      pkgs = import nixpkgs {
-        inherit system;
-        config.allowUnfree = true;
-      };
-      nixvim' = nixvim.legacyPackages.${system};
-      nvim = nixvim'.makeNixvimWithModule {
-        inherit pkgs;
-        module = config;
-        extraSpecialArgs = {
-          inherit self;
+  outputs = inputs @ {flake-parts, ...}:
+    flake-parts.lib.mkFlake {inherit inputs;} {
+      systems = ["x86_64-linux" "aarch64-linux" "aarch64-darwin" "x86_64-darwin"];
+      perSystem = {
+        config,
+        self',
+        inputs',
+        pkgs,
+        system,
+        ...
+      }: let
+        nixvim' = inputs.nixvim.legacyPackages.${system};
+        nvim = nixvim'.makeNixvimWithModule {
+          inherit pkgs;
+          module = import ./config;
+          extraSpecialArgs = {};
         };
-      };
-    in {
-      packages = {
-        default = nvim;
-      };
+      in {
+        devShells.default = pkgs.mkShell {
+          shellHook = ''
+            exec zsh -c zellij
+          '';
+        };
 
-      formatter = pkgs.alejandra;
-    });
+        packages.default = nvim;
+      };
+    };
 }
