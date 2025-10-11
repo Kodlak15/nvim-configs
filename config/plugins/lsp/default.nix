@@ -28,7 +28,7 @@
           ];
         };
         cssls.enable = true;
-        ccls.enable = true;
+        ccls.enable = false; # NOTE: was causing error, so disabled unless need arises later
         clangd.enable = true;
         cmake.enable = true;
         elixirls = {
