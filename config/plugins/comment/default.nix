@@ -18,7 +18,7 @@
     };
     ts-context-commentstring = {
       enable = true;
-      extraOptions = {
+      settings = {
         enable_autocmd = false;
       };
     };
