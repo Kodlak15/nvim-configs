@@ -1,4 +1,4 @@
-{
+{inputs, ...}: {
   plugins = {
     lsp = {
       enable = true;
@@ -31,8 +31,10 @@
         ccls.enable = false; # NOTE: was causing error, so disabled unless need arises later
         clangd.enable = true;
         cmake.enable = true;
-        elixirls = {
+        # elixirls.enable = true;
+        expert = {
           enable = true;
+          package = inputs.expert.packages."x86_64-linux".default;
         };
         gopls = {
           enable = true;

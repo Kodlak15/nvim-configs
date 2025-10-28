@@ -5,6 +5,7 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
+    expert.url = "github:elixir-lang/expert";
   };
 
   outputs = inputs @ {flake-parts, ...}:
@@ -22,7 +23,7 @@
         nvim = nixvim'.makeNixvimWithModule {
           inherit pkgs;
           module = import ./config;
-          extraSpecialArgs = {};
+          extraSpecialArgs = {inherit inputs;};
         };
       in {
         devShells.default = pkgs.mkShell {
