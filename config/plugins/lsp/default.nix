@@ -31,16 +31,18 @@
         ccls.enable = false; # NOTE: was causing error, so disabled unless need arises later
         clangd.enable = true;
         cmake.enable = true;
-        # elixirls.enable = true;
-        expert = {
-          enable = true;
-          package = inputs.expert.packages."x86_64-linux".default;
-          filetypes = [
-            "elixir"
-            "eelixir"
-            "heex"
-          ];
-        };
+        # NOTE: expert is the "official" elixir lsp, but is currently in alpha
+        # there are some rough edges and elixirls works okay while those are being sorted out
+        elixirls.enable = true;
+        # expert = {
+        #   enable = true;
+        #   package = inputs.expert.packages."x86_64-linux".default;
+        #   filetypes = [
+        #     "elixir"
+        #     "eelixir"
+        #     "heex"
+        #   ];
+        # };
         gopls = {
           enable = true;
           filetypes = [
