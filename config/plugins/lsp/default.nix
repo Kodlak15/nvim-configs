@@ -9,6 +9,7 @@
           filetypes = [
             "html"
             "templ"
+            "heex"
           ];
         };
         htmx = {
@@ -35,6 +36,11 @@
         expert = {
           enable = true;
           package = inputs.expert.packages."x86_64-linux".default;
+          filetypes = [
+            "elixir"
+            "eelixir"
+            "heex"
+          ];
         };
         gopls = {
           enable = true;
