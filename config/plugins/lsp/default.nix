@@ -16,7 +16,6 @@
           enable = true;
           filetypes = [
             "html"
-            "heex"
             "templ"
           ];
         };
