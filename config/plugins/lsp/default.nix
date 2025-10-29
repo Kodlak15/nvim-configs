@@ -91,15 +91,32 @@
           enable = true;
           filetypes = [
             "html"
-            "html.heex"
             "heex"
+            "elixir"
             "templ"
             "css"
             "scss"
             "svelte"
           ];
           extraOptions = {
-            init_options.userLanguages.rust = "html";
+            init_options.userLanguages = {
+              rust = "html";
+              heex = "html";
+              elixir = "html-eex";
+            };
+          };
+          settings = {
+            tailwindCSS = {
+              includeLanguages = {
+                heex = "html";
+                elixir = "html-eex";
+              };
+              # Optional: better class extraction from Phoenix sigils
+              experimental.classRegex = [
+                ''class[:]?\\s*"([^"]*)"''
+                ''~H?\\"([^"]*)\\"'' # matches ~H""" ... """ and ~H" ... "
+              ];
+            };
           };
         };
         ols.enable = true;
