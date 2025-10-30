@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   plugins = {
     lsp = {
       enable = true;
@@ -98,24 +102,17 @@
             "scss"
             "svelte"
           ];
-          extraOptions = {
-            init_options.userLanguages = {
-              rust = "html";
-              heex = "html";
-              elixir = "html-eex";
-            };
-          };
           settings = {
             tailwindCSS = {
               includeLanguages = {
                 heex = "html";
                 elixir = "html-eex";
               };
-              # Optional: better class extraction from Phoenix sigils
               experimental.classRegex = [
                 ''class[:]?\\s*"([^"]*)"''
                 ''~H?\\"([^"]*)\\"'' # matches ~H""" ... """ and ~H" ... "
               ];
+              # experimental.configFile = "assets/css/app.css";
             };
           };
         };
