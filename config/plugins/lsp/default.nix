@@ -58,12 +58,10 @@
           package = null; # NOTE: lsp server runs on 127.0.0.1:6005 when godot editor open
         };
         glslls = {
-          enable = false; # NOTE: was causing error, so temporarily disabling until need arises
-          # filetypes = [
-          #   "glsl"
-          #   "vertex"
-          #   "frag"
-          # ];
+          enable = true; # NOTE: was causing error, so temporarily disabling until need arises
+          filetypes = [
+            "glsl"
+          ];
         };
         bashls.enable = true;
         eslint.enable = true;

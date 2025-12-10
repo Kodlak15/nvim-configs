@@ -13,6 +13,10 @@
   filetype = {
     extension = {
       templ = "templ";
+      vert = "glsl";
+      vs = "glsl";
+      frag = "glsl";
+      fs = "glsl";
     };
   };
   viAlias = true;
