@@ -96,5 +96,15 @@
       key = "<Leader>s";
       action = "<cmd>silent! source /home/cody/.config/nvim/init.lua<CR>";
     }
+    {
+      # Toggle Supermaven
+      mode = "n";
+      key = "<leader>sm"; # or whatever key you prefer
+      action = "<cmd>SupermavenToggle<CR>";
+      options = {
+        silent = true;
+        remap = false;
+      };
+    }
   ];
 }
