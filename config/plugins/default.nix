@@ -20,6 +20,7 @@
     # ./transparent
     # ./harpoon
     ./vimtex
+    ./nvim-dap
   ];
 
   plugins = {

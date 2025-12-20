@@ -9,17 +9,18 @@
       };
       ignore_filetypes = ["cpp"];
       color = {
-        suggestion_color = "#cccac2";
+        # suggestion_color = "#cccac2";
+        suggestion_color = "#6c7380";
         cterm = 244;
       };
       log_level = "info";
       disable_inline_completion = false;
       disable_keymaps = false;
-      condition = lib.nixvim.mkRaw ''
-        function()
-          return false
-        end
-      '';
+      # condition = lib.nixvim.mkRaw ''
+      #   function()
+      #     return false
+      #   end
+      # '';
     };
   };
 }
