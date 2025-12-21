@@ -4,7 +4,7 @@
       enable = true;
     };
 
-    plugins.dap-ui = {
+    dap-ui = {
       enable = true;
     };
   };
