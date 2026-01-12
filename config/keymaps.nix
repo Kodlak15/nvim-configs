@@ -160,9 +160,11 @@
           require("nvim-dap-virtual-text").toggle()
         end;
       '';
-      desc = "Terminate debugger";
-      nowait = true;
-      remap = false;
+      options = {
+        desc = "Terminate debugger";
+        nowait = true;
+        remap = false;
+      };
     }
   ];
 }
