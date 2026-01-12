@@ -158,7 +158,7 @@
           require("dap").terminate()
           require("dapui").close()
           require("nvim-dap-virtual-text").toggle()
-        end;
+        end
       '';
       options = {
         desc = "Terminate debugger";
