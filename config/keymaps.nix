@@ -99,12 +99,70 @@
     {
       # Toggle Supermaven
       mode = "n";
-      key = "<leader>sm"; # or whatever key you prefer
+      key = "<leader>sm";
       action = "<cmd>SupermavenToggle<CR>";
       options = {
         silent = true;
         remap = false;
       };
+    }
+    {
+      # Toggle debugger breakpoint
+      mode = "n";
+      key = "<leader>dt";
+      action = "<cmd>DapToggleBreakpoint<CR>";
+      options = {
+        desc = "Dap toggle breakpoint";
+        nowait = true;
+        remap = false;
+      };
+    }
+    {
+      # Continue to next breakpoint
+      mode = "n";
+      key = "<leader>dc";
+      action = "<cmd>DapContinue<CR>";
+      options = {
+        desc = "Dap continue";
+        nowait = true;
+        remap = false;
+      };
+    }
+    {
+      # Debugger step into
+      mode = "n";
+      key = "<leader>di";
+      action = "<cmd>DapStepInto<CR>";
+      options = {
+        desc = "Dap step into";
+        nowait = true;
+        remap = false;
+      };
+    }
+    {
+      # Debugger step over
+      mode = "n";
+      key = "<leader>do";
+      action = "<cmd>DapStepOver<CR>";
+      options = {
+        desc = "Dap step over";
+        nowait = true;
+        remap = false;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>dq";
+      action.__raw = ''
+        function()
+          require("dap").terminate()
+          require("dapui").close()
+          require("nvim-dap-virtual-text").toggle()
+        end;
+      '';
+      desc = "Terminate debugger";
+      nowait = true;
+      remap = false;
     }
   ];
 }

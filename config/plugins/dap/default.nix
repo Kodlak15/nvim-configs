@@ -10,7 +10,6 @@
       configurations = {
         cpp = [
           {
-            # TODO: configure keybinds
             type = "lldb";
             request = "launch";
             name = "lldb";
@@ -22,6 +21,30 @@
           }
         ];
       };
+      settings = {
+        defaults.fallback = {
+          force_new_terminal = true;
+        };
+      };
+      luaConfig.post = ''
+        local dap = require("dap")
+        local dapui = require("dapui")
+
+        vim.fn.sign_define("DapBreakpoint", { text = "🐞" })
+
+        dap.listeners.before.attach.dapui_config = function()
+          dapui.open()
+        end
+        dap.listeners.before.launch.dapui_config = function()
+          dapui.open()
+        end
+        dap.listeners.before.event_terminated.dapui_config = function()
+          dapui.close()
+        end
+        dap.listeners.before.event_exited.dapui_config = function()
+          dapui.close()
+        end
+      '';
     };
 
     dap-ui = {
