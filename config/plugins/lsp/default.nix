@@ -50,7 +50,7 @@
           enable = true;
           filetypes = [
             "go"
-            "templ"
+            # "templ"
           ];
         };
         gdscript = {
