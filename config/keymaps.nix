@@ -151,6 +151,7 @@
       };
     }
     {
+      # Terminate debugger
       mode = "n";
       key = "<leader>dq";
       action.__raw = ''
