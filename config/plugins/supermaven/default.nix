@@ -15,6 +15,11 @@
       log_level = "info";
       disable_inline_completion = false;
       disable_keymaps = false;
+      condition.__raw = ''
+        function()
+          return true;
+        end
+      ''; # disable supermaven by default
     };
   };
 }
