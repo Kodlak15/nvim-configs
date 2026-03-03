@@ -66,7 +66,7 @@
         bashls.enable = true;
         eslint.enable = true;
         nil_ls.enable = true;
-        pyright.enable = true;
+        basedpyright.enable = true;
         hls = {
           enable = true;
           installGhc = false;
