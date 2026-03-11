@@ -87,7 +87,6 @@
         ts_ls.enable = true;
         yamlls.enable = true;
         templ.enable = true;
-        pylsp.enable = true;
         texlab.enable = true;
         tailwindcss = {
           enable = true;
