@@ -55,10 +55,10 @@
         };
         gdscript = {
           enable = true;
-          package = null; # NOTE: lsp server runs on 127.0.0.1:6005 when godot editor open
+          package = null; # NOTE lsp server runs on 127.0.0.1:6005 when godot editor open
         };
-        glslls = {
-          enable = true; # NOTE: was causing error, so temporarily disabling until need arises
+        glsl_analyzer = {
+          enable = true;
           filetypes = [
             "glsl"
           ];
