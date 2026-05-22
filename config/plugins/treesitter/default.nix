@@ -2,15 +2,10 @@
   plugins = {
     treesitter = {
       enable = true;
-      settings = {
-        ensure_installed = "all";
-        highlight = {
-          additional_vim_regex_highlighting = true;
-          enable = true;
-        };
-        indent.enable = true;
-        incremental_selection.enable = true;
-      };
+      # grammarPackages defaults to all grammars; keep that behavior.
+      highlight.enable = true;
+      indent.enable = true;
+      folding.enable = true;
     };
 
     treesitter-context = {
@@ -22,7 +17,10 @@
     };
 
     treesitter-refactor = {
-      enable = true;
+      # NOTE: tied to the legacy (master) branch of nvim-treesitter, which is
+      # being removed in nixvim 26.11. Re-enabling it pulls the deprecated
+      # nvim-treesitter-legacy package and conflicts with the new module.
+      enable = false;
     };
 
     ts-autotag = {
