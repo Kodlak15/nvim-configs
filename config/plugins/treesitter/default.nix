@@ -5,7 +5,7 @@
       # grammarPackages defaults to all grammars; keep that behavior.
       highlight.enable = true;
       indent.enable = true;
-      folding.enable = true;
+      folding.enable = false;
     };
 
     treesitter-context = {
