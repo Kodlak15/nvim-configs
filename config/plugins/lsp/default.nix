@@ -68,7 +68,11 @@
           installGhc = false;
         };
         jsonls.enable = true;
-        ocamllsp.enable = true;
+        # ocamllsp.enable = true;
+        ocamllsp = {
+          enable = true;
+          package = null; # use package from env
+        };
         rust_analyzer = {
           enable = true;
           installCargo = false;
