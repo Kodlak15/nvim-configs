@@ -13,7 +13,7 @@
           ];
         };
         htmx = {
-          enable = true;
+          enable = false; # was causing more trouble than it was worth
           filetypes = [
             "html"
             "templ"
